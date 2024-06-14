@@ -32,13 +32,15 @@ Vue.createApp({
       let resp1 = await req1;
       let resp2 = await req2;
 
-      if (resp1 === 200 && resp2 === 200) {
+      if (resp1.status === 200 && resp2.status === 200) {
         let fact = resp1.json();
         let pic = resp2.json();
         this.facts_internal.push({
           fact: (await fact).facts[0],
           img: (await pic).url,
         });
+      } else {
+        console.log(resp1);
       }
     },
   },
