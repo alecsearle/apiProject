@@ -1,0 +1,25 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+  
+  #lists {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#button-generate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
