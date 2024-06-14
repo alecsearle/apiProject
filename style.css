@@ -1,0 +1,11 @@
+#lists {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#button-generate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
