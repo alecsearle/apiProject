@@ -15,18 +15,27 @@
 		<div id="app">
 			<div class="container">
 				<h1>Dog Facts</h1>
-				<div id="button-generate">
-					<button v-on:click="get_fact()">Generate</button>
-				</div>
-				<div id="lists">
-					<ul>
-						<li v-for="(item, index) in dog_facts">
-							<p>Fact: {{item.fact}}</p>
-						</li>
-					</ul>
-				</div>
+			</div>
+			<div>
+				<button
+					id="darkmode-button"
+					onclick="darkMode()">
+					Darkmode
+				</button>
+			</div>
+			<div id="button-generate">
+				<button v-on:click="get_fact()">Generate</button>
+			</div>
+			<div id="lists">
+				<ol>
+					<li v-for="(item, index) in dog_facts">
+						<p>Fact: {{item.fact}}</p>
+						<br />
+					</li>
+				</ol>
 			</div>
 		</div>
 		<script src="app.js"></script>
 	</body>
+	>>>>>>> 947aa69d313443972e9901beaf901fc085f9e94a
 </html>
