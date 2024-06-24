@@ -1,41 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0" />
-		<title>Vue Boilerplate</title>
-		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-		<link
-			rel="stylesheet"
-			href="style.css" />
-	</head>
-	<body>
-		<div id="app">
-			<div class="container">
-				<h1>Dog Facts</h1>
-			</div>
-			<div>
-				<button
-					id="darkmode-button"
-					onclick="darkMode()">
-					Darkmode
-				</button>
-			</div>
-			<div id="button-generate">
-				<button v-on:click="get_fact()">Generate</button>
-			</div>
-			<div id="lists">
-				<ol>
-					<li v-for="(item, index) in dog_facts">
-						<p>Fact: {{item.fact}}</p>
-						<br />
-					</li>
-				</ol>
-			</div>
-		</div>
-		<script src="app.js"></script>
-	</body>
-	>>>>>>> 947aa69d313443972e9901beaf901fc085f9e94a
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue Boilerplate</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <h1>Dog Facts</h1>
+      </div>
+      <div>
+        <button id="darkmode-button" onclick="darkMode()">Darkmode</button>
+      </div>
+      <div id="button-generate">
+        <button v-on:click="get_fact()">Generate</button>
+      </div>
+      <div id="lists">
+        <ol>
+          <li v-for="(item, index) in dog_facts">
+            <p>Fact: {{item.fact}}</p>
+            <br />
+          </li>
+        </ol>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
 </html>
